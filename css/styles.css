@@ -1,0 +1,92 @@
+html {
+  font-size: 10px;
+}
+
+body {
+  /* University inherited styles part 1 */
+  font-size: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: yellowgreen;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+header > h1.header__heading {
+  margin-top: 1rem;
+  margin-bottom: 0.2rem;
+}
+
+header > h4.header__subhead {
+  margin-top: 0.1rem;
+  margin-bottom: 0.1rem;
+}
+
+div {
+  display: flex;
+  flex-direction: row;
+}
+
+div.main__container {
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+}
+div.main__container > article {
+  background-color: #ffffff1a;
+  border: 0.1rem solid black;
+  box-shadow: 0px 4px 8px rgba(100, 100, 100, 0.2);
+  height: 350px;
+  max-height: 350px;
+  padding: 2rem;
+  margin: 1.5rem;
+}
+
+div.main__container > article:hover {
+  cursor: pointer;
+  box-shadow: 0px 8px 16px rgba(100, 100, 100, 0.3);
+}
+
+main {
+  background-color: green;
+  height: 60vh;
+  width: 70vw;
+}
+
+aside {
+  background-color: navajowhite;
+  height: 60vh;
+  width: 30vw;
+}
+
+footer {
+  background-color: peru;
+  height: 20vh;
+}
+
+/* Mobile Design CSS Start */
+@media only screen and (max-width: 1024px) {
+  div.main-content {
+    flex-direction: column;
+  }
+  main {
+    width: 100%;
+  }
+  aside {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  main > div.main__container {
+    flex-direction: column;
+  }
+}
+/* Mobile Design CSS End */
